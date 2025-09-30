@@ -6,11 +6,13 @@ public class Person {
     
     //constructor explicito sin parámetros (ctor+tab)
     public Person() {
-        name ="NombrePorDefecto"
+        name ="NombrePorDefecto";
         weightInKg = 80.0f;
         heightInMeters = 1.8f;
     }
 
+
+    //getters y setters
     public Person(String name, float weightInKg, float heightInMeters) {
         this.name = name;
         this.weightInKg = weightInKg;
@@ -22,6 +24,11 @@ public class Person {
     }
 
     public void setName(String name) {
+
+        if(name.isEmpty()){
+            return;
+        }
+
         this.name = name;
     }
 
@@ -30,6 +37,11 @@ public class Person {
     }
 
     public void setWeightInKg(float weightInKg) {
+
+        if(weightInKg<=0){
+            return;
+        }
+
         this.weightInKg = weightInKg;
     }
 
@@ -38,14 +50,22 @@ public class Person {
     }
 
     public void setHeightInMeters(float heightInMeters) {
+
+        if(heightInMeters<=0){
+            return;
+        }
+
         this.heightInMeters = heightInMeters;
     }
 
     //metodos (logica/comportamientos)
+    //metodo para el calculo del imc
+    public float obtainIMC(){
+        return this.weightInKg/(this.heightInMeters*this.heightInMeters);
+    }
 
 
 
-    //getters y setters
     
 
 
