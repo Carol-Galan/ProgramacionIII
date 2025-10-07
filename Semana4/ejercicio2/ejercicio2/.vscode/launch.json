@@ -10,7 +10,11 @@
             "request": "launch",
             "mainClass": "Ejercicio2",
             "projectName": "ejercicio2_80e61a54",
-            "args": "carol 55 1.60"
+            "args1": "carol 55 1.60",
+            "args2": "nombre 50 1.65",
+            "args3": "nombre2 65 1.75",
+            "args4": "nombre3 45 1.50",
+            "args5": "nombre4 120 1.90"
         },
         {
             "type": "java",
