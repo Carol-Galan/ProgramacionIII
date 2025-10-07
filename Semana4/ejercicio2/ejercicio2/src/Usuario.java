@@ -56,4 +56,16 @@ public class Usuario {
     }
 
     // si pones barra asterisco asterisco se crea un comentario de javadoc para documentar
+/**
+ * Devuelve una fila que representará a un usuario
+ * @return
+ */
+    public String obtenerUsuarioComoFila(){
+        return String.format("|%10s|%10.2f|%10.2f|%10.2f|", name, peso, altura, obtenerIMC());
+    }
+
+    public static String obtenerCabeceraTablaUsuario(){
+        return String.format("|%10s|%10s|%10s|%10s|", "nombre", "peso", "altura", "IMC");
+    }
+
 }
