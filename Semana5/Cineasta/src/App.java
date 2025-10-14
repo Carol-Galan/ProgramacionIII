@@ -32,7 +32,7 @@ public class App {
                 velocidadReproduccion = sc.nextFloat();
                 break;
             case 3:
-
+                //solicitar datos al usuario, guardarlos, new pelicula y luego añadir a videoteca
                 break;
             case 4:
 
