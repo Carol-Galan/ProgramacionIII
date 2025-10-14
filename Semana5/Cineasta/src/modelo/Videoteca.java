@@ -51,4 +51,11 @@ public class Videoteca {
             return false;
         }
     }
+
+    public boolean isFull(){
+        if peliculas.lenght == cantPeliculas
+            //isfull
+        else
+            //return lo contrario
+    }
 }

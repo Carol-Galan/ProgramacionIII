@@ -35,7 +35,9 @@ public class App {
                 //solicitar datos al usuario, guardarlos, new pelicula y luego añadir a videoteca
                 break;
             case 4:
-
+            //pelicula [] pelis = videoteca.getPeliculas
+            //for pelicula p : pelis
+            //system printf mostrar cosas
                 break;
             case 5:
 
