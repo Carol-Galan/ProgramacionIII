@@ -1,4 +1,7 @@
 import java.util.Scanner;
+import modelo.Videoteca;
+import modelo.Pelicula;
+import modelo.Director;
 public class App {
     public static void main(String[] args) throws Exception {
         //Variables
@@ -17,12 +20,12 @@ public class App {
         System.out.println("| 5) Salir (se borrará toda la información)     |");
         System.out.println("|-----------------------------------------------|");
         System.out.println("Seleccione una opción (1-5):");
-        int opción = sc.nextInt();
+        int opción = sc.nextInt(); //hay un metodo de esdia que te permite meter un max y un min
         switch (opción) {
             case 1:
                 System.out.println("Especifique el tamaño de la videoteca:");
                 int tam_video = sc.nextInt();
-                Videoteca videoteca = crearNuevaVideoteca (tam_video);
+                Videoteca videoteca = crearNuevaVideoteca (tam_video); //probar con el constructor
                 break;
             case 2:
                 System.out.println("Introduzca la velocidad de reproducción:");
@@ -40,7 +43,8 @@ public class App {
             default:
                 System.err.println("Introduzca una opción válida");
         }
-
+//para sacar peliculas usar getPeliculas
+//dame peliculas mientras no sea null
 
 
 

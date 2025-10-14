@@ -55,6 +55,7 @@ public class Pelicula {
         this.duracion_min = duracion_min;
         this.valoracion = valoracion;
     }
+    //puedo crear un nuevo constructor en el que se cree el director y se introduzcan los datos del director
 
 
     
