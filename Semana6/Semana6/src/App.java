@@ -3,7 +3,7 @@ import java.util.ArrayList;
 //import java.util.Iterator;
 
 import modelo.Coche;
-import modelo.Modelo;
+import modelo.Concesionario;
 
 
 public class App {
@@ -27,17 +27,17 @@ public class App {
 
             switch (opcion) {
                 case 1:
-                    Modelo.agregarCoche(coches);
+                    Concesionario.agregarCoche(coches);
                     break;
                 case 2:
-                    Modelo.eliminarCoche(coches);
+                    Concesionario.eliminarCoche(coches);
                     //eliminarPersonaConIterator();
                     break;
                 case 3:
-                    Modelo.modificarCoche(coches);
+                    Concesionario.modificarCoche(coches);
                     break;
                 case 4:
-                    Modelo.listarCoches(coches);
+                    Concesionario.listarCoches(coches);
                     break;
                 case 5:
                     System.out.println("¡Hasta luego!");

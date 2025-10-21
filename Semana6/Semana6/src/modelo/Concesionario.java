@@ -4,7 +4,7 @@ import static com.coti.tools.Esdia.readString_ne;
 
 import java.util.ArrayList;
 
-public class Modelo {
+public class Concesionario {
     public static void agregarCoche(ArrayList<Coche> coches) {
         String matricula = readString_ne("Ingrese la matrícula del coche: ");
         String marca = readString_ne("Ingrese la marca del coche: ");
