@@ -4,8 +4,11 @@ import static com.coti.tools.Esdia.readString_ne;
 
 import java.util.ArrayList;
 
+
 public class Concesionario {
-    public static void agregarCoche(ArrayList<Coche> coches) {
+    private static ArrayList<Coche> coches = new ArrayList<>();
+
+    public static void agregarCoche() {
         String matricula = readString_ne("Ingrese la matrícula del coche: ");
         String marca = readString_ne("Ingrese la marca del coche: ");
         float precio = readFloat("Ingrese el precio del coche: ");
@@ -34,7 +37,7 @@ public class Concesionario {
     }
     */
     
-    public static void eliminarCoche(ArrayList<Coche> coches) {
+    public static void eliminarCoche() {
 
         String matricula = readString_ne("Ingrese la matrícula del coche a eliminar: ");
         Coche cocheAEliminar = null;
@@ -57,7 +60,7 @@ public class Concesionario {
         }
     }
 
-    public static void modificarCoche(ArrayList<Coche> coches) {
+    public static void modificarCoche() {
 
         String matricula = readString_ne("Ingrese la matrícula del coche a modificar: ");
         Coche cocheAModificar = null;
@@ -80,7 +83,7 @@ public class Concesionario {
         }
     }
 
-    public static void listarCoches(ArrayList<Coche> coches) {
+    public static void listarCoches() {
 
         if (coches.isEmpty()) {
             System.out.println("No hay coches en la lista.");
